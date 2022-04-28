@@ -3,7 +3,7 @@ require('dotenv').config();
 
 module.exports.getClient = async () => {
   const client = new Client({
-    host: '127.0.0.1',
+    host: process.env.DBSERVERIP,
     port: 5432,
     user: 'postgres',
     password: process.env.DBPASS,
