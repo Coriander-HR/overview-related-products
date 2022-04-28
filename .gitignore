@@ -106,3 +106,4 @@ dist
 # aws ec2 key
 /sdc_server_key.pem
 /sdc_server_key.pemZone.Identifier
+/sdc-load-test.yml

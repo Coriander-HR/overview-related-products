@@ -76,7 +76,7 @@ router.get('/:product_id/styles', function(req, res, next) {
 
     await client.query(stylesQuery)
       .then((data) => {console.log('queried table', data.rows); res.send({product_id: req.params.product_id, results: data.rows})})
-      .catch((err) => {console.log(err); res.send(sample)});
+      .catch((err) => {console.log(err); res.send(err)});
 
     await client.end();
   })();
