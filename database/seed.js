@@ -2,6 +2,7 @@ const { getClient } = require('./connect.js');
 
 console.log('Seeding database...');
 
+
 // --------------- Seeding the skus data ----------------------
 (async () => {
   const client = await getClient();
