@@ -5,9 +5,9 @@ module.exports.getClient = async () => {
   const client = new Client({
     host: process.env.DBSERVERIP,
     port: 5432,
-    user: 'postgres',
+    user: 'ubuntu',
     password: process.env.DBPASS,
-    database: "products",
+    database: "ec2",
     ssl: false
   });
   await client.connect().catch(err => {console.log(err)});

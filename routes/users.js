@@ -107,6 +107,8 @@ router.get('/:product_id/related', function(req, res, next) {
 
 module.exports = router;
 
+
+
 // ---- First draft
 // SELECT styles.id, styles.name, styles.original_price, styles.sale_price, styles.default_style AS "default?", array_agg((skus_mod.id, skus_mod.fuk)) AS assfuk
 // FROM styles
@@ -395,3 +397,5 @@ module.exports = router;
 // 	GROUP BY skus.styleId
 // ) AS photos_skus
 // ON photos_skus.styleId = photos_style.styleId
+
+
